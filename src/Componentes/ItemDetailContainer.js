@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Zapatillas from "../APIrest/Zapatillas";
-import Card from "../../components/Home/Card/Card";
+import Item from "../Componentes/Item";
 import { useParams } from "react-router-dom";
 
 
@@ -37,7 +37,7 @@ function ItemDetailContainer() {
                 .filter((zapa) => zapa.character.includes(filter))
                 .filter((zapa) => zapa.marca === cat)
                 .map((zapatillas, i) => (
-                    <Card
+                    <Item
                     id={i}
                     key={i}
                     marca={zapatillas.marca}
@@ -50,7 +50,7 @@ function ItemDetailContainer() {
             : zapatillas
                 .filter((zapa) => zapa.character.includes(filter))
                 .map((zapa, i) => (
-                    <Card
+                    <Item
                     id={i}
                     key={i}
                     marca={zapatillas.marca}

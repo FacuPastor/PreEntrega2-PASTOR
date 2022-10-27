@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
-
+import NavDropdown from 'react'
 
 function NavBar() {
     return (
@@ -15,9 +15,14 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link className='links' href="./Sitios/Inicio">Inicio</Nav.Link>
-                        <Nav.Link className='links' href="#link">Carrito</Nav.Link>
-                        <Nav.Link className='links' href="#link">Contacto</Nav.Link>
+                        <Nav.Link to={`/`}>Inicio</Nav.Link>
+                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <NavDropdown.Item to={`/marca/Adidas`}>Adidas</NavDropdown.Item>
+                            <NavDropdown.Item to={`/marca/New Balanace`}>New Balanace</NavDropdown.Item>
+                            <NavDropdown.Item to={`/marca/Nike`}>Nike</NavDropdown.Item>
+                            <NavDropdown.Item to={`/marca/Pumas`}>Pumas</NavDropdown.Item>
+                            <NavDropdown.Item to={`/marca/Vans`}>Vans</NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
                 <CartWidget/>

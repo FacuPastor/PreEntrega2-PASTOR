@@ -1,18 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Fragment } from 'react';
 import NavBar from './Componentes/NavBar';
-import Item from './Componentes/Item';
-import ItemlistContainer from './Componentes/ItemListContainer';
-import Itemlist from './Componentes/ItemList';
+import ItemDetailContainer from './Componentes/ItemDetailContainer';
+import SearchBar from './Componentes/SearchBar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
-    <>
-    <NavBar/>
-    <ItemlistContainer/>
-
-    </>
+    <BrowserRouter>
+        <NavBar/>
+      <Routes>
+        <Route path="/" element={<ItemDetailContainer />}></Route>
+        <Route path="/category/:cat" element={<ItemDetailContainer />}></Route>
+        <Route path="/SearchBar/:idZapatillas" element={<SearchBar />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
