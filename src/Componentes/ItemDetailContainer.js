@@ -32,8 +32,7 @@ function ItemDetailContainer() {
         />
 
         <div className="cards-container">
-            {cat
-            ? zapatillas
+            {cat ? zapatillas
                 .filter((zapa) => zapa.character.includes(filter))
                 .filter((zapa) => zapa.marca === cat)
                 .map((zapatillas, i) => (
@@ -49,7 +48,7 @@ function ItemDetailContainer() {
                 ))
             : zapatillas
                 .filter((zapa) => zapa.character.includes(filter))
-                .map((zapa, i) => (
+                .map((zapatillas, i) => (
                     <Item
                     id={i}
                     key={i}
@@ -66,3 +65,15 @@ function ItemDetailContainer() {
 }
 
 export default ItemDetailContainer;
+
+// .then(data =>{
+//     const arrayFiltrado = data.filter( x=> x.category === cat);
+//     setProductos(arrayFiltrado);
+//     const arraySinFiltro = data
+//     console.log(data);
+// if (cat){
+//     console.log(cat); (setProductos(arrayFiltrado))
+// } else{
+//     ((setProductos(arraySinFiltrado)))
+// }
+// })

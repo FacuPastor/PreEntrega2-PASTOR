@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -11,7 +11,7 @@ export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) =
                     <h5 className="card-modelo">{modelo}</h5>
                     <p className="card-color">Color: {color}</p>
                     <p className="card-precio">${precio}</p>
-                    <NavLink to = {`/${filtro}/${id}`} className="btn-agregar">Ver detalles del producto</NavLink> 
+                    <Link to = {`/${filtro}/${id}`} className="btn-agregar">Ver detalles del producto</Link> 
                 </div>
             </div>
 
