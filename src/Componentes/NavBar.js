@@ -10,7 +10,7 @@ function NavBar() {
         <Navbar className='' bg="dark" expand="lg">
             <Container className='navContainer'>
             <div className="flex justify-between items-center marca">
-                <span className="text-xl font-mono mx-4 p-5 font-['monaco'] hover:text-cyan-800 duration-500 cursor-pointer">
+                <span>
                     <Link to={`/`} >
                         <img className="h-5 inline mx-3 imgLogo logo" alt='logo' src='/img/logo.jpg'></img>Shoes Point 
                     </Link>
@@ -19,12 +19,12 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Link to={`/`} className="links">Inicio</Link>
-                        <Link to={`/marca/Adidas`} className="links">Adidas</Link>
-                        <Link to={`/marca/New Balanace`} className="links">New Balanace</Link>
-                        <Link to={`/marca/Nike`} className="links">Nike</Link>
-                        <Link to={`/marca/Pumas`} className="links">Pumas</Link>
-                        <Link to={`/marca/Vans`} className="links">Vans</Link>
+                        <NavLink to={`/`} className="links">Inicio</NavLink>
+                        <NavLink to={`/marca/Adidas`} className="links">Adidas</NavLink>
+                        <NavLink to={`/marca/New Balanace`} className="links">New Balanace</NavLink>
+                        <NavLink to={`/marca/Nike`} className="links">Nike</NavLink>
+                        <NavLink to={`/marca/Pumas`} className="links">Pumas</NavLink>
+                        <NavLink to={`/marca/Vans`} className="links">Vans</NavLink>
                     </Nav>
                 </Navbar.Collapse>
                 <CartWidget/>
