@@ -33,7 +33,7 @@ function ItemDetailContainer() {
 
         <div className="cards-container">
             {cat ? zapatillas
-                .filter((zapa) => zapa.character.includes(filter))
+                .filter((zapa) => zapa.marca.includes(filter))
                 .filter((zapa) => zapa.marca === cat)
                 .map((zapatillas, i) => (
                     <Item
@@ -47,7 +47,7 @@ function ItemDetailContainer() {
                     />
                 ))
             : zapatillas
-                .filter((zapa) => zapa.character.includes(filter))
+                .filter((zapa) => zapa.marca.includes(filter))
                 .map((zapatillas, i) => (
                     <Item
                     id={i}
@@ -65,6 +65,9 @@ function ItemDetailContainer() {
 }
 
 export default ItemDetailContainer;
+
+
+
 
 // .then(data =>{
 //     const arrayFiltrado = data.filter( x=> x.category === cat);

@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "./App.css";
 import NavBar from './Componentes/NavBar';
 import ItemlistContainer from './Componentes/ItemDetailContainer';
 import SearchBar from './Componentes/SearchBar';
