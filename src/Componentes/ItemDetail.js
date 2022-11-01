@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import ItemCount from './ItemCount';
 
 
@@ -12,7 +11,7 @@ export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) =
                     <h5 className="card-modelo">{modelo}</h5>
                     <p className="card-color">Color: {color}</p>
                     <p className="card-precio">${precio}</p>
-                    <p>{detalle}</p>
+                    <p className="card-detalle">{detalle}</p>
                     <div>
                     <ItemCount/>
                     <button className=" btn-agregar">Agregar al carrito<i className="fas fa-shopping-cart" /></button>
