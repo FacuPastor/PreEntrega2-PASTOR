@@ -70,7 +70,7 @@
   color:#00a6e4
 }
 
-.principal-container{
+.cards-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -79,6 +79,8 @@
 .titulo{
   margin: 20px;
 }
+
+
 
 .zapatilla{
   margin: auto;
@@ -116,8 +118,6 @@
   font-weight: bold;
   color:#b26b098c
 }
-
-
 
 .counter{
   width: fit-content;

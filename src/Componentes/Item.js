@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Card from 'react-bootstrap/Card';
 
 export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) => {
   return (
-    <div className='tienda'>
+    <div className='cardf'>
     <Card style={{ width: '18rem' }} >
       <Card.Img variant="top" alt={`{marca} {modelo}`} src={img} />
       <Card.Body>
@@ -12,7 +12,7 @@ export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) =
         <Card.Text></Card.Text>
         <p className="card-color">Color: {color}</p>
         <p className="card-precio">${precio}</p>
-        <Link to = {`/${filtro}/${id}`} className="btn-agregar">Ver detalles del producto</Link> 
+        <NavLink to = {`/${marca}/${id}`} className="btn-agregar">Ver detalles del producto</NavLink> 
       </Card.Body>
     </Card>
     </div>

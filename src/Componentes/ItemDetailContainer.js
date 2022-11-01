@@ -9,6 +9,7 @@ function ItemDetailContainer() {
     const [zapatillas, setZapatillas] = useState([]);
     const { cat } = useParams();
 
+    
     const getImages = () => {
         setTimeout(() => {
         const tienda = Zapatillas;
@@ -22,7 +23,8 @@ function ItemDetailContainer() {
 
     return (
         <div className="principal_container">
-        <h1>Tienda</h1>
+        <h1>Tienda - Productos destacados</h1>
+        <h4>REFINA TU BUSQUEDA POR MARCAS</h4>
         <input
             id="filter"
             name="filter"
@@ -30,6 +32,7 @@ function ItemDetailContainer() {
             value={filter}
             onChange={(event) => setFilter(event.target.value)}
         />
+        <button id="searchButton" class="searchButton" title="Buscar"> &#128270; </button>
 
         <div className="cards-container">
             {cat ? zapatillas

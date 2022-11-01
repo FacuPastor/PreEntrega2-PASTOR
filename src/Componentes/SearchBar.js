@@ -9,7 +9,7 @@ const SearchBar = () => {
 
     useEffect(() => {
         setZapatillas(getZapatillasById(idZapatillas));
-    }, [idZapatillas]);
+    }, []);
 
     return <div>{zapatillas.marca}</div>;
     };

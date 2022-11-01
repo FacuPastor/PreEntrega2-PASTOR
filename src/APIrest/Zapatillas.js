@@ -6,7 +6,7 @@ const Zapatillas = [
         "color": "Blanco",
         "precio": 19499,
         "img": "/img/adidas1.jpg" ,
-        "detalles": "¿Quedarse quieta/o? Ni pensarlo. Esta línea de zapatillas ha sido sinónimo de innovación desde siempre. La más reciente adición a esta línea llena de tecnología de Adidas no es la excepción. Estas zapatillas son una combinación perfecta de materiales modernos y estilo retro. No lo pensés. Da un paso hacia el futuro."
+        "detalle": "¿Quedarse quieta/o? Ni pensarlo. Esta línea de zapatillas ha sido sinónimo de innovación desde siempre. La más reciente adición a esta línea llena de tecnología de Adidas no es la excepción. Estas zapatillas son una combinación perfecta de materiales modernos y estilo retro. No lo pensés. Da un paso hacia el futuro."
         
     },
     {
