@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getZapatillasById } from "../APIrest/Zapatillas";
+import { getZapatillasById } from "../APIrest/productos";
 
 const SearchBar = () => {
     const { idZapatillas } = useParams();

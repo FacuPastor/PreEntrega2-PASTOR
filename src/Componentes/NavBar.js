@@ -18,13 +18,21 @@ function NavBar() {
             </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <NavLink to={`/`} className="links">Inicio</NavLink>
-                        <NavLink to={`/marca/Adidas`} className="links">Adidas</NavLink>
-                        <NavLink to={`/marca/New Balanace`} className="links">New Balanace</NavLink>
-                        <NavLink to={`/marca/Nike`} className="links">Nike</NavLink>
-                        <NavLink to={`/marca/Pumas`} className="links">Pumas</NavLink>
-                        <NavLink to={`/marca/Vans`} className="links">Vans</NavLink>
+                    <Nav >
+                        <ul className="me-auto">
+                            <li>                        
+                                <NavLink to={`/`} className="links">Inicio</NavLink></li>
+                            <li>                        
+                                <NavLink to={`/marca/Adidas`} className="links">Adidas</NavLink></li>
+                            <li>                        
+                                <NavLink to={`/marca/New Balance`} className="links">New Balanace</NavLink></li>
+                            <li>                        
+                                <NavLink to={`/marca/Nike`} className="links">Nike</NavLink></li>
+                            <li>                        
+                                <NavLink to={`/marca/Puma`} className="links">Puma</NavLink></li>
+                            <li>                        
+                                <NavLink to={`/marca/Vans`} className="links">Vans</NavLink></li>
+                        </ul>
                     </Nav>
                 </Navbar.Collapse>
                 <CartWidget/>

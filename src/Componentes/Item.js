@@ -12,7 +12,7 @@ export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) =
         <Card.Text></Card.Text>
         <p className="card-color">Color: {color}</p>
         <p className="card-precio">${precio}</p>
-        <NavLink to = {`/${marca}/${id}`} className="btn-agregar">Ver detalles del producto</NavLink> 
+        <NavLink to = {`/detalle/${id}`} className="btn-agregar">Ver detalles del producto</NavLink> 
       </Card.Body>
     </Card>
     </div>

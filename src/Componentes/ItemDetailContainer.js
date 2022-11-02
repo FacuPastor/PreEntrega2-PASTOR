@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Zapatillas from "../APIrest/Zapatillas";
+import Zapatillas from "../APIrest/productos";
 import Item from "../Componentes/Item";
 import { useParams } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 function ItemDetailContainer() {
     const [filter, setFilter] = useState("");
     const [zapatillas, setZapatillas] = useState([]);
-    const { cat } = useParams();
+    const { productId } = useParams();
 
     
     const getImages = () => {
@@ -32,12 +32,13 @@ function ItemDetailContainer() {
             value={filter}
             onChange={(event) => setFilter(event.target.value)}
         />
-        <button id="searchButton" class="searchButton" title="Buscar"> &#128270; </button>
+        <button id="searchButton" className="searchButton" title="Buscar"> &#128270; </button>
 
         <div className="cards-container">
-            {cat ? zapatillas
+            {productId 
+            ? zapatillas
                 .filter((zapa) => zapa.marca.includes(filter))
-                .filter((zapa) => zapa.marca === cat)
+                .filter((zapa) => zapa.marca === productId)
                 .map((zapatillas, i) => (
                     <Item
                     id={i}

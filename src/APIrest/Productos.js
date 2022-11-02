@@ -1,4 +1,4 @@
-const Zapatillas = [
+const zapatillas = [
     {
         "id": 1,
         "marca": "Adidas",
@@ -183,10 +183,7 @@ const Zapatillas = [
 ]
 
 export const getZapatillasById = (id) =>{
-    return Zapatillas[id];
-  }
-  
-  
-  
-  export default Zapatillas;
-  
+    return zapatillas[id];
+}
+
+export default zapatillas;
