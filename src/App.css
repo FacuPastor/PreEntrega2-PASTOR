@@ -42,8 +42,9 @@
 }
 
 .marca{
-  display: flex;
+  color:#ffffff
 }
+
 
 .imgLogo{
   width: 50px;
@@ -55,7 +56,9 @@
   font-size: 25px;
   font-weight: bolder;
   letter-spacing: 2px;
+  text-decoration: none;
 }
+
 
 .marcas{
   background-color: #000;

@@ -1,6 +1,7 @@
 const zapatillas = [
     {
         "id": 1,
+        "stock": "5",
         "marca": "Adidas",
         "modelo": "Forum",
         "color": "Blanco",
@@ -11,6 +12,7 @@ const zapatillas = [
     },
     {
         "id": 2,
+        "stock": "5",
         "marca": "Adidas",
         "modelo": "Superstar",
         "color": "Negro",
@@ -20,6 +22,7 @@ const zapatillas = [
     },    
     {
         "id": 3,
+        "stock": "5",
         "marca": "Adidas",
         "modelo": "Forum",
         "color": "Blanco",
@@ -29,6 +32,7 @@ const zapatillas = [
     },    
     {
         "id": 4,
+        "stock": "5",
         "marca": "Adidas",
         "modelo": "Ozelia",
         "color": "Blanco",
@@ -38,6 +42,7 @@ const zapatillas = [
     },    
     {
         "id": 5,
+        "stock": "5",
         "marca": "New Balance",
         "modelo": "MS237",
         "color": "Otros",
@@ -47,6 +52,7 @@ const zapatillas = [
     },
     {
         "id": 6,
+        "stock": "5",
         "marca": "New Balance",
         "modelo": "MS237",
         "color": "Otros",
@@ -56,6 +62,7 @@ const zapatillas = [
     },
     {
         "id": 7,
+        "stock": "5",
         "marca": "New Balance",
         "modelo": "MS237",
         "color": "Otros",
@@ -65,6 +72,7 @@ const zapatillas = [
     },
     {
         "id": 8,
+        "stock": "5",
         "marca": "New Balance",
         "modelo": "MS237",
         "color": "Otros",
@@ -74,6 +82,7 @@ const zapatillas = [
     },
     {
         "id": 9,
+        "stock": "5",
         "marca": "Nike",
         "modelo": "React",
         "color": "Negro",
@@ -83,6 +92,7 @@ const zapatillas = [
     },
     {
         "id": 10,
+        "stock": "5",
         "marca": "Nike",
         "modelo": "Crater",
         "color": "Negro",
@@ -92,6 +102,7 @@ const zapatillas = [
     },
     {
         "id": 11,
+        "stock": "5",
         "marca": "Nike",
         "modelo": "Air force",
         "color": "Negro",
@@ -101,6 +112,7 @@ const zapatillas = [
     },
     {
         "id": 12,
+        "stock": "5",
         "marca": "Nike",
         "modelo": "Blazer",
         "color": "Negro",
@@ -110,6 +122,7 @@ const zapatillas = [
     },
     {
         "id": 13,
+        "stock": "5",
         "marca": "Puma",
         "modelo": "RS-FAST",
         "color": "Otros",
@@ -119,6 +132,7 @@ const zapatillas = [
     },
     {
         "id": 14,
+        "stock": "5",
         "marca": "Puma",
         "modelo": "RS-FAST",
         "color": "Otros",
@@ -128,6 +142,7 @@ const zapatillas = [
     },
     {
         "id": 15,
+        "stock": "5",
         "marca": "Puma",
         "modelo": "Cruise",
         "color": "Otros",
@@ -137,6 +152,7 @@ const zapatillas = [
     },
     {
         "id": 16,
+        "stock": "5",
         "marca": "Puma",
         "modelo": "Cruise",
         "color": "Otros",
@@ -146,6 +162,7 @@ const zapatillas = [
     },
     {
         "id": 17,
+        "stock": "5",
         "marca": "Vans",
         "modelo": "Old Skool",
         "color": "Negro",
@@ -155,6 +172,7 @@ const zapatillas = [
     },
     {
         "id": 18,
+        "stock": "5",
         "marca": "Vans",
         "modelo": "Authentic",
         "color": "Negro",
@@ -164,6 +182,7 @@ const zapatillas = [
     },
     {
         "id": 19,
+        "stock": "5",
         "marca": "Vans",
         "modelo": "Old Skool",
         "color": "Negro",
@@ -173,6 +192,7 @@ const zapatillas = [
     },
     {
         "id": 20,
+        "stock": "5",
         "marca": "Vans",
         "modelo": "Botas SK8",
         "color": "Negro",

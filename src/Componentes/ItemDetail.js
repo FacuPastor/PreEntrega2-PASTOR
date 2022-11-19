@@ -2,7 +2,7 @@ import ItemCount from './ItemCount';
 
 
 
-export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) => {
+export const Item = ({id, marca, modelo, color, precio, img, detalle}) => {
     return (
             <div className="card" style={{ width: "18rem" }}>
                 <img className="card-img-top" alt={`{marca} {modelo}`} src={img}/>
@@ -23,3 +23,4 @@ export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) =
 };
 
 export default Item;
+

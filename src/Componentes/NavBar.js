@@ -7,12 +7,13 @@ import { Link, NavLink } from 'react-router-dom'
 
 function NavBar() {
     return (
-        <Navbar className='' bg="dark" expand="lg">
+        <Navbar className='' bg="primary" expand="lg">
             <Container className='navContainer'>
             <div className="flex justify-between items-center marca">
                 <span>
                     <Link to={`/`} >
-                        <img className="h-5 inline mx-3 imgLogo logo" alt='logo' src='/img/logo.jpg'></img>Shoes Point 
+                        <img className="h-5 inline mx-3 imgLogo logo" alt='logo' src='/img/logo.jpg'></img>
+                        <Navbar.Brand to="/">Shoes Point</Navbar.Brand>
                     </Link>
                 </span>
             </div>

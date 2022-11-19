@@ -16,7 +16,7 @@ const ItemCount = () => {
     return (
     <div className='btn-agregar'>
         <button disabled={contador === 0 ? true : false} onClick={handleResta}>-</button>
-        <p></p>
+        <p>{contador + 1}</p>
         <button onClick={handleSuma}>+</button>
     </div>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import Zapatillas from '../APIrest/Zapatillas'
+import Zapatillas from '../APIrest/productos'
 import Item from './Item'
 
 const ItemList = () => {
@@ -10,6 +10,7 @@ const ItemList = () => {
             {Zapatillas.map((zapatilla) => (
                 <Item 
                 key={zapatilla.id}
+                id={zapatilla.id}
                 marca={zapatilla.marca}
                 modelo={zapatilla.modelo}
                 color={zapatilla.color}

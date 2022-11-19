@@ -14,7 +14,7 @@ function ItemDetailContainer() {
         setTimeout(() => {
         const tienda = Zapatillas;
         setZapatillas(tienda);
-        }, 3000);
+        }, 1500);
     };
 
     useEffect(() => {
@@ -41,8 +41,8 @@ function ItemDetailContainer() {
                 .filter((zapa) => zapa.marca === productId)
                 .map((zapatillas, i) => (
                     <Item
-                    id={i}
                     key={i}
+                    id={zapatillas.id}
                     marca={zapatillas.marca}
                     modelo={zapatillas.modelo}
                     color={zapatillas.color}
@@ -54,8 +54,8 @@ function ItemDetailContainer() {
                 .filter((zapa) => zapa.marca.includes(filter))
                 .map((zapatillas, i) => (
                     <Item
-                    id={i}
                     key={i}
+                    id={zapatillas.id}
                     marca={zapatillas.marca}
                     modelo={zapatillas.modelo}
                     color={zapatillas.color}

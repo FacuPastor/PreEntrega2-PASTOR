@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import Card from 'react-bootstrap/Card';
 
-export const Item = ({id, marca, filtro, modelo, color, precio, img, detalle}) => {
+export const Item = ({id, marca, modelo, color, precio, img, detalle}) => {
   return (
     <div className='cardf'>
     <Card style={{ width: '18rem' }} >
